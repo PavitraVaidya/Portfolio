@@ -276,10 +276,7 @@ function App() {
 
           <div className="image-frame">
 
-            <img
-              src="/profile.jpg"
-              alt="Pavitra Vaidya"
-            />
+           <img src="./profile.jpg" />
 
           </div>
 
