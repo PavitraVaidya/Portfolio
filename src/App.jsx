@@ -61,7 +61,7 @@ const experiences = [
       "JavaScript",
       "HTML",
       "CSS",
-      "SQLite3",
+      "SQL",
     ],
   },
   {
@@ -93,7 +93,7 @@ const projects = [
       "HTML",
       "CSS",
       "JavaScript",
-      "SQLite3",
+      "SQL",
     ],
     features: [
       "Student registration & login",
@@ -102,7 +102,7 @@ const projects = [
       "CRUD operations",
     ],
     github:
-      "https://github.com/PavitraSV123/Student_Management_System",
+      "https://github.com/PavitraVaidya/Student_Management_System",
   },
   {
     number: "02",
@@ -116,7 +116,7 @@ const projects = [
       "HTML",
       "CSS",
       "JavaScript",
-      "SQLite3",
+      "SQL",
     ],
     features: [
       "User authentication",
@@ -125,7 +125,7 @@ const projects = [
       "Orders and checkout",
     ],
     github:
-      "https://github.com/PavitraSV123/E-Commerce-Website",
+      "https://github.com/PavitraVaidya/E-Commerce-Website",
   },
 ];
 
@@ -174,6 +174,8 @@ function App() {
           <a href="#projects">Projects</a>
           <a href="#experience">Experience</a>
           <a href="#education">Education</a>
+            <a href="#certifications">Certifications</a>
+
         </div>
 
         <a href="#contact" className="nav-contact">
@@ -199,26 +201,26 @@ function App() {
           </div>
 
           <p className="hero-small">
-            HELLO, I'M
-          </p>
+  HELLO, I'M
+</p>
 
-          <h1>
-            Pavitra
-            <br />
-            <span>Vaidya</span>
-          </h1>
+<h1 className="hero-name">
+  Pavitra <span>Vaidya</span>
+</h1>
 
-          <div className="hero-role">
-            <span></span>
-            Python Full Stack Developer
-          </div>
+<div className="hero-role">
+  <div className="moving-text">
+    Python Full Stack Developer
+  </div>
+</div>
 
-          <p className="hero-text">
-            I enjoy turning ideas into practical web applications
-            and solving problems through clean, simple and
-            effective code.
-          </p>
-
+<p className="hero-text">
+  I enjoy turning ideas into practical web applications and solving
+  problems through clean, simple and effective code. I work with Python,
+  Django, React, JavaScript and SQL, and I'm continuously improving my
+  problem-solving and DSA skills by building projects and solving coding
+  challenges.
+</p>
           <div className="hero-actions">
 
             <a href="#projects" className="btn-primary">
@@ -407,6 +409,7 @@ function App() {
         </div>
 
       </section>
+      
 
 
       {/* ================= SKILLS ================= */}
@@ -794,7 +797,7 @@ function App() {
 
       {/* ================= CERTIFICATIONS ================= */}
 
-      <section className="certificate-section">
+      <section id="certifications"className="certificate-section">
 
         <div className="section">
 

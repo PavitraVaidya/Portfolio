@@ -157,9 +157,9 @@ a {
 ========================================= */
 
 .hero {
-  min-height: 650px;
+  min-height: 400px;
 
-  padding: 60px 8% 70px;
+  padding: 0px 8% 70px;
 
   display: grid;
 
@@ -205,9 +205,10 @@ a {
 /* Hero content */
 
 .hero-content {
-  max-width: 650px;
-
+  max-width: 550px;
+margin-top: 1px;
   position: relative;
+  transform: translateY(-20px);
 
   z-index: 2;
 }
@@ -219,7 +220,7 @@ a {
 
   gap: 9px;
 
-  padding: 7px 12px;
+  padding: 0px 12px;
 
   margin-bottom: 22px;
 
@@ -250,7 +251,7 @@ a {
 
   color: var(--blue-light);
 
-  font-size: 13px;
+  font-size: 130px;
 
   font-weight: 600;
 
@@ -376,9 +377,6 @@ a {
 }
 
 
-/* =========================================
-   HERO IMAGE
-========================================= */
 
 .hero-image-area {
   height: 460px;
@@ -389,6 +387,7 @@ a {
   justify-content: center;
 
   position: relative;
+   transform: translateY(-25px);
 }
 
 .image-glow {
@@ -583,9 +582,10 @@ a {
 .section {
   max-width: 1250px;
 
-  margin: auto;
+ margin-top: 20px;
+ margin-bottom: 20px;
 
-  padding: 75px 40px;
+  padding: 30px 40px;
 }
 
 
@@ -785,6 +785,7 @@ a {
   grid-template-columns: repeat(3, 1fr);
 
   gap: 12px;
+  
 }
 
 .skill-item {
@@ -874,6 +875,9 @@ a {
 
 .projects-section {
   background: var(--bg);
+  margin-bottom: 50px;
+  margin-top: 20px;
+
 }
 
 .project-list {
@@ -1650,33 +1654,51 @@ a {
   }
 
   .hero {
-  min-height: auto;
+  min-height: 590px;
+  padding: 5px 8% 45px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
 
-  padding: 25px 20px 45px;
-  }
-  .hero h1 {
-    font-size: 58px;
+.hero-content {
+  flex: 1;
+}
 
-    letter-spacing: -4px;
-  }
+.hero-intro {
+  margin-bottom: 12px;
+  font-size: 15px;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
 
-  .hero-role {
-    font-size: 17px;
-  }
+.hero h1 {
+  font-size: 60px;
+  line-height: 0.98;
+  margin: 0 0 18px;
+  font-weight: 700;
+}
+.hero-small {
+  font-size: 1300px;
+  letter-spacing: 3px;
+  margin: 0 0 12px;
+  font-weight: 600;
+}
+.hero h1 span {
+  color: var(--blue);
+}
 
-  .hero-text {
-    font-size: 14px;
-  }
+.hero-subtitle {
+  font-size: 30px;
+  margin-bottom: 18px;
+}
 
-  .hero-actions {
-    flex-direction: column;
-
-    align-items: flex-start;
-  }
-
-  .hero-image-area {
-    height: 1000px;
-  }
+.hero-description {
+  font-size: 60px;
+  line-height: 1.7;
+  max-width: 600px;
+}
 
   .image-frame {
     width: 250px;
@@ -1818,4 +1840,62 @@ a {
 
     font-size: 11px;
   }
+}
+.hero-small {
+    font-size: 30px !important;
+}
+.hero-role {
+  width: 500px;
+  overflow: hidden;
+  position: relative;
+}
+
+.moving-text {
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--blue-light);
+
+  animation: moveText 8s linear infinite;
+}
+
+@keyframes moveText {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(500px);
+  }
+}
+/* .hero {
+  min-height: 0 !important;
+  height: auto !important;
+  padding: 20px 8% 10px !important;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+} */
+.hero-content {
+  flex: 1;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.hero-intro {
+  margin: 0 !important;
+  padding: 0 !important;
+} 
+.hero-name {
+  font-size: 55px !important;
+  line-height: 1 !important;
+  white-space: nowrap !important;
+}
+.hero-small {
+  font-size: 25px !important;
+  letter-spacing: 2px !important;
+  margin-top: 10px;
+  font-weight: 600 !important;
 }
