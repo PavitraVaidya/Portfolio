@@ -276,7 +276,7 @@ function App() {
 
           <div className="image-frame">
 
-           <img src="./profile.jpg" />
+           <img src="/Portfolio/profile.jpg" />
 
           </div>
 
